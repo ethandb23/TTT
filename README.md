@@ -37,8 +37,11 @@ Trying to learn and implement certain new ideas was a challenge. These ideas inc
 -Using prototype in javascript to creat object instances in conjunction with websockets for different upgrades to the game
 
 
+I focused a lot on making sure to write DRY, clearly laid-out code without redunancies. I may have spent too much time focusing on the cleanliness of my code in retrospect. 
+
 
 [Unsolved Problems:]
+
 -Animated Background
 
 -Sound Notifications
