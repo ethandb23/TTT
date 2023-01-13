@@ -103,3 +103,12 @@ I focused a lot on making sure to write DRY, clearly laid-out code without redun
 
 -I should not use technologies or functions that I don't fully understand, or seek help when I need to get a better grasp on a subject.
 
+
+
+[Documentation:]
+
+-https://stackoverflow.com/questions/33632578/html5-websocket-class-and-its-instances-using-each-other-connection
+
+-https://wanago.io/2018/09/24/introduction-to-websockets-creating-a-node-js-server-and-using-websocket-api-in-the-browser/
+
+-https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up#:~:text=In%20prototypical%20inheritance%2C%20prototypes%20are,methods%20and%20properties%20during%20instantiation
