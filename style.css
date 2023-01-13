@@ -1,0 +1,40 @@
+body {
+    font: normal 16px sans-serif;
+    text-align: center;
+    }
+
+#tic-tac-toe {
+    cell-spacing: 0px;
+    border-spacing: 0px
+    border-collapse: separate;
+    margin: 30px auto;
+    }
+
+#tic-tac-toe td {
+    border: 2px solid #000;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font: 50px sans serif;
+    }
+
+#tic-tac-toe tr:first-child td {border-top: none;}
+
+#tic-tac-toe tr:last-child td {border-bottom: none;}
+
+#tic-tac-toe tr td:first-child {border-left: none;}
+
+#tic-tac-toe tr td:last-child {border-right: none;}
+
+#tic-tac-toe td.X {color: #8a56ef}
+
+#tic-tac-toe td.O {color: #10aded}
+
+#scoreboard .points {
+    text-align: center;
+    font-size: 50px;
+}
+
+#scoreboard .points#playerX {color: #8444ff}
+
+#scoreboard .points#playerO {color: #24d1e2}

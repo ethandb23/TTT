@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+</head>
+
+<body>
+         <script src="script.js"></script>
+
+        <table id="scoreboard" align="center">
+            <tr>
+                <td> Player X </td>
+                <td width="30"> &nbsp; </td>
+                <td> Player O </td>
+            </tr>
+
+            <tr>
+                <td class="points" id="playerX"> 0 </td>
+                <td> &nbsp; </td>
+                <td class="points" id="playerO"> 0 </td>
+            </tr>
+
+        </table>
+        
+        <div id="placeholder"></div>
+
+        <button onclick="restart()"> Clear Board </button>
+
+        <select onchange="restart(this.value)">
+            
+            <option value="2"> First time? </option> <!-- Super Easy 2x2-->
+            <option value="3"> Easy </option>   <!-- Easier 3x3-->
+            <option value="4"> Medium </option> <!-- Normal 4x4-->
+            <option value="5"> Hard </option> <!-- Bigger board 5x5-->
+            <option value="6"> Expert </option> <!-- Biggest board 6x6-->
+        </select> 
+  
+</body>
+</html>
