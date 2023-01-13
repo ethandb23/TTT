@@ -37,7 +37,7 @@ TicTacToe.prototype.paint = function(grid_size) {
 	}
 
 	html += '</table>';
-	
+	console.log(self);
 	self.placeholder.innerHTML = html;
 
 
