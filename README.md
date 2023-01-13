@@ -14,6 +14,9 @@
 
 
 
+
+
+
 [User Stories:]
 
 As a user, I should be able to start a new tic tac toe game.
@@ -48,6 +51,14 @@ I focused a lot on making sure to write DRY, clearly laid-out code without redun
 
 
 
+
+
+
+
+
+
+
+
 [MVP FEATURES:]
 
 -Simple Tic Tac Toe Game
@@ -59,6 +70,13 @@ I focused a lot on making sure to write DRY, clearly laid-out code without redun
 -The ability to reset the game board after a game has concluded
 
 
+
+
+
+
+
+
+
 [Unsolved Problems/Planned Updates:]
 
 -Animated/Responsive Background
@@ -68,6 +86,14 @@ I focused a lot on making sure to write DRY, clearly laid-out code without redun
 -AI opponent
 
 -Player Creation
+
+
+
+
+
+
+
+
 
 [Key Takeaways:]
 
