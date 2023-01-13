@@ -1,10 +1,15 @@
 [Tehcnologies used:]
 
+-HTML
+
+-CSS
+
+-Javascript
+
 -Prototype inheritance (not working currently)
 
 -Classical inheritance
 
--CSS td, tr and table functions
 
 
 [User Stories:]
