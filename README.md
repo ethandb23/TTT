@@ -40,13 +40,20 @@ Trying to learn and implement certain new ideas was a challenge. These ideas inc
 I focused a lot on making sure to write DRY, clearly laid-out code without redunancies. I may have spent too much time focusing on the cleanliness of my code in retrospect. 
 
 
-[Unsolved Problems:]
+[MVP FEATURES:]
+Simple Tic Tac Toe Game
+Two players can play from one computer
+Color-coded players 
+The ability to reset the game board after a game has concluded
 
--Animated Background
+
+[Unsolved Problems/Planned Updates:]
+
+-Animated/Responsive Background
 
 -Sound Notifications
 
--Multiplayer/AI opponent
+-AI opponent
 
 -Player Creation
 
