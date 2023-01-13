@@ -1,5 +1,5 @@
 function TicTacToe(placeholder, grid_size, callback) {
-
+ 
 	this.placeholder = placeholder;
 
 	this.paint(grid_size);
@@ -40,20 +40,19 @@ TicTacToe.prototype.paint = function(grid_size) {
 	
 	self.placeholder.innerHTML = html;
 
+
 	self.columns = self.placeholder.getElementsByTagName("td");
 
 	for(i = 0; i < this.columns.length; i++) {
 		self.columns[i].addEventListener("click", markHandler);
 	}
 
-
 	function markHandler(e) {
 		self.mark(e.target);
 	}
-
 };
 
-TicTacToe.prototype.mark = function(column) { 
+TicTacToe.prototype.mark = function(column) {
 
 	if(column.innerHTML) {
 		return;
@@ -67,19 +66,15 @@ TicTacToe.prototype.mark = function(column) {
 	column.classList.add(current_mark);
 
 	if(this.didWin(current_mark)) {
-
 		if(this.marks.count % 2 === 1) {
 			this.scores.X++;
 		} else {
 			this.scores.O++;
 		}
 		this.callback(current_mark, this.scores);
-
-	} 
-    else if(this.marks.count === this.columns.length) {
+	} else if(this.marks.count === this.columns.length) {
 		this.callback("draw");
 	}
-
 };
 
 TicTacToe.prototype.didWin = function(mark) {
@@ -92,27 +87,27 @@ TicTacToe.prototype.didWin = function(mark) {
 		left_to_right_count = 0;
 
 	for(var i = 0; i < grid_size; i++) {
-
 		horizontal_count = vertical_count = 0;
 
 		for(var j = 0; j < grid_size; j++) {
-			// i * grid_size + j ===> "0,1,2", "3,4,5", "6,7,8"
 			if(this.columns[i * grid_size + j].innerHTML == mark) {
 				horizontal_count++;
 			}
-			// j * grid_size + i ===> "0,3,6", "1,4,7", "2,5,8"
 			if(this.columns[j * grid_size + i].innerHTML == mark) {
 				vertical_count++;
 			}
 		}
+		if(horizontal_count == grid_size || vertical_count == grid_size) {
+			return true;	
+		}
+		if(this.columns[i * grid_size + i].innerHTML == mark) {
+			right_to_left_count++;
+		}
+		if(this.columns[(grid_size - 1) * (i+1)].innerHTML == mark) {
+			left_to_right_count++;
+		}
 
-		if(horizontal_count == grid_size || vertical_count == grid_size) { return true;	}
-
-		if(this.columns[i * grid_size + i].innerHTML == mark) {	right_to_left_count++; }
-
-		if(this.columns[(grid_size - 1) * (i+1)].innerHTML == mark) { left_to_right_count++; }
-
-	} 
+	}
 
 	if(right_to_left_count == grid_size || left_to_right_count == grid_size) {
 		return true;	
@@ -145,9 +140,9 @@ var tictactoe = new TicTacToe(placeholder, 3, onResult);
 
 function onResult(result, scores) {
 	if(result == 'draw') {
-		alert("It's a draw !");
+		alert("It's a draw!");
 	} else {
-		alert(result + " has won");
+		alert(result + " wins!");
 		updateScores(scores.X, scores.O);
 	}
 	tictactoe.empty();
