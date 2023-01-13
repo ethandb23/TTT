@@ -1,3 +1,5 @@
+
+
 [Tehcnologies used:]
 
 -HTML
@@ -45,6 +47,7 @@ Trying to learn and implement certain new ideas was a challenge. These ideas inc
 I focused a lot on making sure to write DRY, clearly laid-out code without redunancies. I may have spent too much time focusing on the cleanliness of my code in retrospect. 
 
 
+
 [MVP FEATURES:]
 
 -Simple Tic Tac Toe Game
@@ -65,4 +68,12 @@ I focused a lot on making sure to write DRY, clearly laid-out code without redun
 -AI opponent
 
 -Player Creation
+
+[Key Takeaways:]
+
+-I need to keep an extensive commit history in case I get to a point where I can't undo or fix a mistake.
+
+-I need to spend less time working on my code's cleanliness and put more time into writing code and improvingthe application
+
+-I should not use technologies or functions that I don't fully understand, or seek help when I need to get a better grasp on a subject.
 
