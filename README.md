@@ -41,10 +41,14 @@ I focused a lot on making sure to write DRY, clearly laid-out code without redun
 
 
 [MVP FEATURES:]
-Simple Tic Tac Toe Game
-Two players can play from one computer
-Color-coded players 
-The ability to reset the game board after a game has concluded
+
+-Simple Tic Tac Toe Game
+
+-Two players can play from one computer
+
+-Color-coded players 
+
+-The ability to reset the game board after a game has concluded
 
 
 [Unsolved Problems/Planned Updates:]
