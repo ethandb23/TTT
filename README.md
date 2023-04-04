@@ -73,34 +73,54 @@
 </ul>
 
 
-    <p>The planning stage for this was simple, as Tic Tac Toe is a very commonly known game. I did not require any sketches or wireframes in order to visualize the game board. I am an experienced tic-tac-toe player and had no problem imagining a board to begin with. I decided that functionality would be my initial focus. However, I did start with some basic pseudocode:</p>
-    <pre><code>// Define the game board as a 2D array of empty squares
+ The planning stage for this was simple, as Tic Tac Toe is a very commonly known game. I did not require any sketches or wireframes in order to visualize the game board. I am an experienced tic-tac-toe player and had no problem imagining a board to begin with. I decided that functionality would be my initial focus. However, I did start with some basic pseudocode:
+    
+    
+
+ // Define the game board as a 2D array of empty squares
 let board = [
   ['', '', ''],
   ['', '', ''],
   ['', '', '']
 ];
 
+
+
+
+
 // Define the current player as X
 let currentPlayer = 'X';
 
+
+
+
+
 // Define a function to check if a player has won the game
 function checkWin(player) {
-  // Check rows
+
+
+
+// Check rows
   for (let row = 0; row < 3; row++) {
     if (board[row][0] === player && board[row][1] === player && board[row][2] === player) {
       return true;
     }
   }
 
-  // Check columns
+
+
+
+// Check columns
   for (let col = 0; col < 3; col++) {
     if (board[0][col] === player && board[1][col] === player && board[2][col] === player) {
       return true;
     }
   }
 
-  // Check diagonals
+
+
+
+// Check diagonals
   if (board[0][0] === player && board[1][1] === player && board[2][2] === player) {
     return true;
   }
@@ -108,22 +128,38 @@ function checkWin(player) {
     return true;
   }
 
+
+
+
+
   // If no winning condition is met, return false
   return false;
 }
 
+
+
 // Define a function to make a move on the board
 function makeMove(row, col, player) {
-  // Check if the square is empty
+ 
+
+
+// Check if the square is empty
   if (board[row][col] === '') {
-    // Set the square to the player's mark
+  
+  
+  
+// Set the square to the player's mark
     board[row][col] = player;
     
-    // Check if the player has won
+
+
+// Check if the player has won
     if (checkWin(player)) {
       console.log(player + ' wins!');
     } else {
-      // Switch to the other player
+      
+
+// Switch to the other player
       currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
     }
   } else {
@@ -131,28 +167,37 @@ function makeMove(row, col, player) {
   }
 }
 
+
+
 // Start the game loop
-while (true) {
-  // Display the current board state
+    while (true) {
+// Display the current board state
   console.log(board);
+
+
   
-  // Ask the current player to make a move
+// Ask the current player to make a move
   let row = prompt('Enter row (0-2) for ' + currentPlayer + ':');
   let col = prompt('Enter column (0-2) for ' + currentPlayer + ':');
+  </p>
 
 
 
 
-<h2>Description</h2>
-<p>The first parameter, placeholder, is a reference to an HTML element that will serve as the container for the Tic Tac Toe game.</p>
-<p>The second parameter, grid_size, is an integer value that represents the size of the grid to be used in the Tic Tac Toe game. This value will determine the number of rows and columns that will be used to construct the game board.</p>
-<p>The third parameter, callback, is a function that will be called after each turn in the game. This function will receive information about the current state of the game as its argument.</p>
-<p>Inside the TicTacToe function, the this.placeholder property is set to the placeholder parameter, which means that the placeholder element will be accessible as an instance property of the TicTacToe object.</p>
-<p>The paint method is called on the object, passing in the grid_size parameter as an argument. This method will generate the HTML and CSS needed to construct the game board inside the placeholder element.</p>
+
+
+
+
 <p>The callback parameter is assigned to the this.callback property, which means that it will be accessible as an instance property of the TicTacToe object.</p>
 <p>Finally, an object called scores is created with two properties, X and O, both set to 0. This object will be used to keep track of the score of each player throughout the game.</p>
 
+
+
 <h2>Code</h2>
+<p>The first parameter, placeholder, is a reference to an HTML element that will serve as the container for the Tic Tac Toe game.</p>
+<p>The second parameter, grid_size, is an integer value that represents the size of the grid to be used in the Tic Tac Toe game. This value will determine the number of rows and columns that will be used to construct the game board.</p>
+<p>The third parameter, callback, is a function that will be called after each turn in the game. This function will receive information about the current state of the game as its argument.</p>
+
 <pre><code>
 TicTacToe.prototype.empty = function() {
     for(var i = 0; i < this.columns.length; i++) {
@@ -162,7 +207,11 @@ TicTacToe.prototype.empty = function() {
     }
     this.marks.count = 0;
 };
+</code></pre>
 
+<p>Inside the TicTacToe function, the this.placeholder property is set to the placeholder parameter, which means that the placeholder element will be accessible as an instance property of the TicTacToe object.</p>
+
+<pre><code>
 TicTacToe.prototype.reset = function() {
     this.empty();
     this.scores = {
@@ -170,7 +219,14 @@ TicTacToe.prototype.reset = function() {
         O: 0
     };
 };
+</code></pre>
 
+
+
+
+<p>The paint method is called on the object, passing in the grid_size parameter as an argument. This method will generate the HTML and CSS needed to construct the game board inside the placeholder element.</p>
+
+<pre><code>
 var placeholder = document.getElementById("placeholder");
 
 var tictactoe = new TicTacToe(placeholder, 3, onResult);
@@ -199,13 +255,17 @@ function restart(grid_size) {
 }
 </code></pre>
 
+
+<p>The callback parameter is assigned to the this.callback property, which means that it will be accessible as an instance property of the TicTacToe object.</p>
+<p>Finally, an object called scores is created with two properties, X and O, both set to 0. This object will be used to keep track of the score of each player throughout the game.</p>
+
+
 <h2>Function Explanation</h2>
 <ul>
     <li><code>TicTacToe.prototype.empty</code>: A prototype method of the TicTacToe function that clears the game board and sets the count property of the marks object to 0.</li>
     <li><code>TicTacToe.prototype.reset</code>: A prototype method of the TicTacToe function that resets the game board and the scores object to their initial states.</li>
     <li><code>onResult(result, scores)</code>: A callback function that takes in the outcome of the game (win or draw) and the scores of each player, respectively, and displays an alert message indicating which player won the game or if it ended in a draw. It then calls the <code>updateScores</code> function to update the score board and calls the <code>empty</code> method to clear the game
 
-<h1>Tic Tac Toe Game</h1>
 
 <p>This is a continuation of the previous code snippet where the empty and reset methods are defined as prototype methods of the TicTacToe function.</p>
 
