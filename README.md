@@ -73,7 +73,11 @@
 </ul>
 
 
- The planning stage for this was simple, as Tic Tac Toe is a very commonly known game. I did not require any sketches or wireframes in order to visualize the game board. I am an experienced tic-tac-toe player and had no problem imagining a board to begin with. I decided that functionality would be my initial focus. However, I did start with some basic pseudocode:
+
+<h2>Planning</h2>
+ 
+ 
+ <p>The planning stage for this was simple, as Tic Tac Toe is a very commonly known game. I did not require any sketches or wireframes in order to visualize the game board. I am an experienced tic-tac-toe player and had no problem imagining a board to begin with. I decided that functionality would be my initial focus. However, I did start with some basic pseudocode:</p>
     
     
 
@@ -281,7 +285,13 @@ function restart(grid_size) {
 
 <p>The restart function is called when the user clicks on the "Restart" button. It calls the reset method to clear the game board and reset the scores. If a new grid_size parameter is passed in, it calls the paint method of the TicTacToe object to generate a new game board with the new size. Finally, it calls the updateScores function to update the score board with the new scores.</p>
 
+
+
+<h2>Challenges</h2>
 <p>One of the main challenges I encountered during the project was learning how to use JavaScript for the first time to create a functional app. To overcome this challenge, I spent a significant amount of time studying the basics of JavaScript, such as variables, loops, and conditional statements. I also spent time exploring various resources online to gain a deeper understanding of how JavaScript works and how it can be used to create web applications. Additionally, I experimented with creating small, standalone scripts to test out different ideas and approaches, which helped me to build my skills and confidence in using JavaScript.</p>
+
+
+<h2>Wins</h2>
 
 <p>A new project can be a daunting experience, especially when it involves building a functional application with styling. However, through dedication and persistence, I was able to achieve these two important milestones. One of the main wins of this project was building my first working app with styling. This required me to learn new techniques for designing and implementing user interfaces, including CSS styling and responsive design principles. By experimenting with different styling options and refining my approach through feedback and iteration, I was able to create a polished and visually appealing application.</p>
 
